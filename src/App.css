@@ -1,0 +1,89 @@
+*{
+  margin: 0;
+}
+
+.app__footer{text-align: center; margin-bottom: 15px;}
+footer{font-style: initial;font-weight: bolder; font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;}
+.social-container {
+  background:transparent;
+  padding-top:3px;
+}
+a.social {
+  transition: transform 250ms;
+}
+a.social:hover {
+  transform: translateY(-2px);
+}
+a.instagram {
+  color: black;
+  padding-right: 7px;
+}
+a.whatsapp {
+  color: #4FCE5D;
+}
+a.fab{
+  color: black;
+  padding-left: 7px;
+}
+
+
+body{
+  background-color: #f5f6fa;
+}
+
+.app__dropdown {
+  background-color: white;
+}
+
+.app{
+  display:flex;
+  justify-content: space-evenly;
+  padding: 20px;
+}
+
+.app__left{
+  flex:0.9;
+}
+
+.app__header >h1{
+  color: red;
+  font-size: 2rem;
+}
+
+.app__header{
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+  justify-content: space-between;
+}
+
+.app__stats{
+  display: flex;
+  justify-content: space-between;
+}
+
+.app__right{
+  display: flex;
+  flex-direction: column;
+}
+
+.app__right .MuiCardContent-root{
+  display: flex;
+  flex-direction: column;
+  flex-grow:1;
+}
+.app__graph{
+  flex-grow:1;
+}
+
+.app__graphTitle{
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+@media (max-width:990px) {
+  .app{
+    flex-direction: column;
+  }
+  footer{padding-left: 10px;}
+}
